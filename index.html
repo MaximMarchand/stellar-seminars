@@ -1,11 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <meta charset="utf-8">
+    <title>STELLAR SEMINARS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./data/2526_seminars_data.js"></script>
+    <script src="./data/2627_seminars_data.js?v=1.1.1"></script>
+    <script src="./scripts/schedule_table.js" defer></script>
+    <script src="./scripts/show_abstracts.js" defer></script>
+    <script src="./scripts/countdown.js" defer></script>
 </head>
+
+
 <body>
-    <h1>HELLO, WORLD</h1>
-    <p>test</p>
-</body>
+
+    <header>
+        <div class="unigelogo">
+            <img class="img-unigelogo" src="./img/logo_astronomy_white.png" alt="UNIGE logo">
+        </div>
+        <div class="container-title">
+            <h1 class="text-title">STELLAR SEMINARS</h1>
+            <h1 class="text-title subtitle">2026 - 2027</h1>
+        </div>
+    </header>
+
+
+    <main>
+    
+        <div class="upcoming-seminar-announce">
+            <h2 class="upcoming-seminar-announce-h2"> Upcoming Seminar </h2>
+            <div class="alert">
+            </div>
+            <div id="countdown" data-datetime=""> </div> <!-- YYYY-MM-DD hh:mm:ss -->
+            <!--     <table class="upcoming-seminar-announce-table"> -->
+            <!--         <tr> <th class="upcoming-seminar-announce-th"> Date - time </th> <td></td> </tr> -->
+            <!--         <tr> <th class="upcoming-seminar-announce-th"> Place       </th> <td></td> </tr> -->
+            <!--         <tr> <th class="upcoming-seminar-announce-th"> Speaker     </th> <td></td> </tr> -->
+            <!--         <tr> <th class="upcoming-seminar-announce-th"> Title       </th> <td style="font-style:italic"></td> </tr> -->
+            <!--         <tr> <th colspan=2 style="padding-top:1cm;padding-bottom:1cm">Abstract </th> </tr> -->
+            <!--         <tr> <td colspan=2 style="text-align:justify"></td> </tr> -->
+                </table>
+        </div>
+        
+        <hr>
+        
+        <h2> Schedule </h2>
+        
+        <div class="container">
+            <div id="schedule-table"></div>
+        </div>
+        
+        <div id="talk-dialog"></div>
+        
+        <hr>
+        
+        <h2 id="contactus"> Organizer </h2>
+        
+        <table class="table-contactus">
+            <tr> <td class="table-contactus-td"> Maxime Marchand </td> <td class="table-contactus-td"> S309 </td> <td class="table-contactus-td"> <img src="./img/mm.png"  style="width:120%;"> </td> </tr>
+        </table>
+        
+        <hr>
+        
+        <h2> For the Speakers </h2>
+        
+        <p> Here are some informations for the people presenting to the Stellar Seminars. </p>
+        
+        <ul>
+            <li> The Stellar Seminars take place every Thursday between 10h00 and 11h00. Usually, 45 minutes are dedicated
+                 to the talk, and the remaining 15 minutes are dedicated to questions from the audience.                      </li>
+            <li> The audience consists of PHD/Master students, postdocs and professors working in different areas of stellar
+                 physics. Note that some of the people may not be totally familiar with your research topic.                  </li>
+            <li> We let the possibility for people who cannot attend the seminar in person to join us via a Zoom session.
+                 Usually, the speaker connects to the session and shares his/her screen in order to make his/her slides
+                 visible for the people attending remotely.                                                                   </li>
+            <li> If you agree, your talk will be recorded and made available via a private link that is given only to the
+                 Stellar Group members.                                                                                       </li>
+            <li> We usually send an email to announce the seminar on Monday. Please send a title and abstract to <a href="#contactus">Maxime Marchand</a>
+                 at least <strong>one week before</strong> your talk. </li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <hr>
+        
+        <div id="footer-contactus">
+            <p> Not yet subscribed to the mailing list ? <a href="#contactus">Contact us</a> !
+        </div>
+        
+        <div style="display:flex;color:grey;margin-top:2em">
+            Stellar Seminars website V1 <hr style="flex-grow:1;margin-left:0pt;border:0pt"> &#169; 2026 Maxime Marchand
+        </div>
+    </footer>
+    
+</body>                                                                                                                              
+
+
 </html>

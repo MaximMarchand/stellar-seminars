@@ -1,0 +1,252 @@
+ html {
+    margin: 0;
+    padding: 0;
+  font-family: Courier New;
+  font-size: 15pt;
+  color: white;
+  background-color: #000022;
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative; /* Makes header the positioning context for the logo */
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 34, 0) 60%, #000022 100%), url("./img/Pleiades_Large.jpg");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+}
+
+.container-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the title vertically inside the header */
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.text-title {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* clamp() allows the font to fluidly resize based on the viewport width,
+       preventing breaking on smaller windows */
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    line-height: 1.2;
+}
+
+.subtitle {
+    margin-top: 15px; /* Clean spacing between the title lines */
+}
+
+.unigelogo {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   display: flex;
+   justify-content: flex-end;
+   z-index: 10;
+}
+
+.img-unigelogo {
+    width: 200px; /* Fixed maximum width so it scales cleanly without taking up too much space */
+    height: auto;
+}
+
+@media (max-width: 1500px) {
+    main {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+    footer {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+h2 {
+    font-family: "Arial";
+    letter-spacing: 0.1em;
+}
+
+hr {
+  border:solid 1px;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+a {
+  color: #FF00FF
+}
+
+li, ul {
+  text-align: justify;
+  margin-bottom: 15px;
+  list-style-type: "*  ";
+}
+
+ul li::marker {
+  color: yellow;
+  font-weight:bold;
+}
+
+.alert {
+  border:solid 2pt;
+  background-color:#FF000055;
+  border-color:#FF0000FF;
+  margin-bottom:1cm;
+  padding:1em;
+}
+
+.upcoming-seminar-announce {
+  border:solid 2pt;
+  border-color:#829AB1;
+  background-color:#829AB133;
+  border-radius:25px;
+}
+
+.upcoming-seminar-announce-h2 {
+  padding:1em;
+  margin:0pt;
+  background-color:#829AB155;
+  border-top-left-radius:25px;
+  border-top-right-radius:25px;
+}
+
+.upcoming-seminar-announce-table {
+  padding:1em;
+}
+
+.upcoming-seminar-announce-th {
+  width:5cm;
+  text-align:left;
+  font-weight:bold;
+}
+
+.upcoming-seminar-announce-abstract-th {
+  font-weight:bold;
+  text-align:left;
+}
+
+.table-contactus-td {
+  width:7cm;
+  text-align:left;
+}
+
+.header-table-cell {
+    text-align: left;
+    font-weight: bold;
+    width: 6em;
+}
+
+.date-cell {
+  width:18%;
+  text-align:left;
+}
+
+.time-cell {
+  width:10%;
+  text-align:left;
+}
+
+.place-cell {
+  width:30%;
+  text-align:left;
+}
+
+.speaker-cell {
+  width:10cm;
+  text-align:left;
+}
+
+tr.tr-schedule:not(:has(.free-spot)):not(:has(.holiday-cell)) {
+    cursor: pointer;
+}
+
+#footer-contactus {
+  border:solid 2pt;
+  background-color:#00FF0022;
+  border-color:green;
+  padding-left:0.5cm;
+}
+
+
+.past-event {
+  color:grey;
+}
+
+.unusual-time {
+  color:red;
+}
+
+.unusual-place {
+  color:red;
+}
+
+.free-spot {
+  color: green;
+  font-weight: bold;
+}
+
+.holiday-cell {
+  text-align: left;
+  font-weight: bold;
+  color: red;
+}
+
+.selected-talk, dialog {
+  color:white;
+  text-align:justify;
+  background-color: #003366F0;
+  border: solid 2pt;
+  border-color:white;
+  position:fixed;
+  top:2cm;
+  left:0;
+  width:80vw;
+  height:50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+button {
+  font-family:"Courier New";
+  font-size:20pt;
+  color:white;
+  background-color:#003366;
+  border-color:#003366;
+  cursor: pointer;
+}
+
+
+#countdown {
+  text-align:center;
+  font-weight:bold;
+  color:yellow;
+  padding:0.5cm
+}
