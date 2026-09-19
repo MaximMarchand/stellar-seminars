@@ -26,7 +26,7 @@ header {
     position: relative; /* Makes header the positioning context for the logo */
     width: 100%;
     height: 600px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 34, 0) 60%, #000022 100%), url("img/Pleiades_Large.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 34, 0) 60%, #000022 100%), url("img/Pleiades_large.jpg");
     background-size: cover;
     background-position: center 35%;
     background-repeat: no-repeat;
