@@ -1,0 +1,298 @@
+.space-grotesk-font {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color:  #000022FF;
+    --txt-color: #FFFFFFFF;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    overflow-x: hidden;
+}
+
+main {
+    width: min(1200px, 95%);
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7rem;
+}
+
+footer {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+    color: #888888FF;
+    text-align: right;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+}
+
+@media( max-width: 800px ) {
+    footer {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+header {
+    width: 100vw;
+    height: clamp(300px, 30vw, 500px);
+    text-align: center;
+    letter-spacing: 0.2rem;
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 34, 0) 60%, #000022 100%),
+                      url("./assets/2627_header.webp");
+    background-position: center 35%;
+}
+
+section {
+}
+
+hr {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a#reservation-link {
+    color: #00FFFFBB;
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+#unige-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;;
+}
+
+@media (max-width: 1200px) {
+    #unige-logo {
+        width: 150px;
+    }
+}
+
+
+/* || UPCOMING SEMINAR */
+
+#tab-upcoming-seminar {
+    background-color: #00FFFF33;
+    padding: 2rem;
+    border: solid #00FFFF66 2pt;
+    border-radius: 50px;
+    text-align: left;
+    width: 100%;
+}
+
+#tab-upcoming-seminar th {
+    /* display: flex; */
+    /* align-items: flex-start; */
+    width: 150px;
+}
+
+/* || SCHEDULE TABLE */
+
+#div-schedule {
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#div-schedule table {
+    white-space: nowrap;
+}
+
+.header-table-cell {
+    width: 220px;
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+
+tr.tr-schedule:not(:has(.free-spot)):not(:has(.reserved-spot)):not(:has(.holiday-cell)) {
+    cursor: pointer;
+}
+
+.past-event {
+    color: grey;
+}
+
+.free-spot {
+    color: #00FF00BB;
+    font-style: italic;
+}
+
+.reserved-spot {
+    color: orange;
+    font-style: italic;
+}
+
+.holiday-cell {
+    color: red; 
+}
+
+
+.unusual-date {
+    color: red;
+}
+
+.unusual-time {
+    color: red;
+}
+
+.unusual-place {
+    color: red;
+}
+
+
+
+/* || CONTACT */
+
+#contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media (max-width: 680px) {
+    #contacts-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+}
+
+#contact-item {
+    border: solid #00FFFFBB;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#contact-item:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+    background-color: #00FFFF11;
+}
+
+#contact-item li {
+    list-style-type: none;
+}
+
+#contact-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 0.07rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* || SPEAKERS INFORMATION */
+
+#sec-speakers-info ul {
+    padding-left: 1.5rem;
+}
+
+#sec-speakers-info li {
+    list-style-type: "✲   ";
+    line-height: 2rem;
+}
+
+#sec-speakers-info li::marker {
+    font-size: 1rem;
+    color: yellow;
+}
+
+/* || ABSTRACT WINDOW */
+
+#abstract-window {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    max-height: 80vh;
+    overflow-y: scroll;
+    width: 50%;
+    width: min(1400px, 90%);
+    background-color: var(--bg-color);
+    border: solid cyan 3pt;
+    border-radius: 5px;
+}
+
+#abstract-window-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-color);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+}
+
+#abstract-window-button:hover {
+    background-color: red;
+    transition: linear 0.1s;
+}
+
+#abstract-window-title {
+    color: yellow;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#abstract-window-abstract {
+    padding: 3rem;
+    font-family: Arial;
+    letter-spacing: 0.1rem;
+}
+
+@media( max-width: 600px ) {
+
+    #abstract-window-title {
+        padding: 1rem;
+    }
+
+    #abstract-window-abstract {
+        padding: 1rem;
+    }
+}

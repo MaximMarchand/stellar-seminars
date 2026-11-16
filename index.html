@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="./data/2627_seminars_data.js"></script>
+    <script src="./data/test_data.js"></script>
+    <script src="./scripts/tools.js"></script>
+    <script src="./scripts/abstracts.js"></script>
+    <script src="./scripts/schedule.js"></script>
+    <script src="./scripts/main.js"></script>
+    <title>STELLAR SEMINARS UNIGE</title>
+</head>
+
+<body class="space-grotesk-font">
+
+    <header>
+        <img id="unige-logo" src="./assets/logo_astronomy_white.png" alt="">
+        <h1>STELLAR SEMINARS <br> 2026 - 2027</h1>
+    </header>
+    
+    <main>
+        
+        <section id="sec-upcoming-seminar">
+
+            <h2>Upcoming seminar</h2>
+
+            <table id="tab-upcoming-seminar">
+                <tr>
+                    <th>Date - Time</th>
+                    <td> 19<sup>th</sup> November 2026 - 10h00 </td>
+                </tr>
+                <tr>
+                    <th>Place</th>
+                    <td>Astrotech Jura</td>
+                </tr>
+                <tr>
+                    <th>Speaker</th>
+                    <td>Pr. Hanfeng Song</td>
+                </tr>
+                <tr style="color: yellow ;font-style: italic">
+                    <td colspan="2" style="padding-top: 3rem;font-weight: bold;">The evolution of massive contact binaries - an solved problem</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The evolution of massive contact binaries remains an important unsolved problem. This talk presents the observed properties of massive and low-mass contact binaries and the physical processes that may be associated with them. To model the evolution of massive contact binaries, it introduces the treatment of  mass transfer through  Roche lobe overflow, the physical processes of energy transfer within the common envelope, non-conservative orbital evolution, the influence of angular momentum loss from outer Lagrangian point L2 and circumbinary disks on angular momentum evolution, and  dynamics instabilities induced by mass transfer through Roche lobe overflow. Finally, the evolutionary fate of massive contact binaries is presented.</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <hr>
+
+        <section id="sec-schedule">
+
+            <h2>Schedule</h2>
+
+            <div id="div-schedule">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section id="sec-organizers">
+
+            <h2>Organizers</h2>
+
+            <p>If you wish to reserve a seminar to present your work (or let one of your guests present his / her own), contact us by <a id="reservation-link" href="">email</a>.
+            In order to avoid any organizational issues, <strong>please do not forget to CC both of us</strong> !
+            </p>
+
+            <div id="contacts-container">
+                <a id="contact1" href=""> 
+                <ul id="contact-item">
+                    <li id="contact-name">Maxime Marchand</li>
+                    <li>S309</li>
+                    <li id="m1"></li>
+                </ul>
+                </a>
+                <a id="contact2" href="">
+                <ul id="contact-item">
+                    <li id="contact-name">Maddalena Benedet</li>
+                    <li>S427</li>
+                    <li id="m2"></li>
+                </ul>
+                </a>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section id="sec-speakers-info">
+
+            <h2>For the speakers</h2>
+            <ul>
+                <li> The Stellar Seminars take place every Thursday between 10h00 and 11h00. Usually, 45 minutes are dedicated
+                     to the talk, and the remaining 15 minutes are dedicated to questions from the audience.                      </li>
+                <li> The audience consists of PHD/Master students, postdocs and professors working in different areas of stellar
+                     physics. Note that some of the people may not be totally familiar with your research topic.                  </li>
+                <li> We let the possibility for people who cannot attend the seminar in person to join us via a Zoom session.
+                     Usually, the speaker connects to the session and shares his/her screen in order to make his/her slides
+                     visible for the people attending remotely.                                                                   </li>
+                <li> If you agree, your talk will be recorded and made available via a private link that is given to the Stellar
+                     Group members only.                                                                                          </li>
+                <li> We usually send an email to announce the seminar on Monday. Please send a title and abstract to Maxime
+                     Marchand and Maddalena Benedet at least <strong>one week before</strong> your talk.                          </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        &#169; 2026 Maxime Marchand. All rights reserved.
+    </footer>
+
+    <div id="abstract-window">
+        <button id="abstract-window-button">X</button>
+        <div id="abstract-window-title"></div>
+        <div id="abstract-window-abstract"></div>
+    </div>
+    
+</body>
+</html>
+<script>console.log(get_local_time());</script>
