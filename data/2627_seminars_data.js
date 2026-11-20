@@ -150,12 +150,12 @@ const data_2627 = [
     abstract: ""
   },
   {
-    type: "free",
+    type: "seminar",
     date: "2027-01-14",
     time: "10:00",
     place: "Astrotech Jura",
-    speaker: "",
-    title: "",
+    speaker: "Maxime Marchand",
+    title: "Angular momentum transport in intermediate-mass stars with the baroclinic instability",
     abstract: ""
   },
   {
