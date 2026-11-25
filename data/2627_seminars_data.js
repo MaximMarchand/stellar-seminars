@@ -177,13 +177,13 @@ const data_2627 = [
     abstract: ""
   },
   {
-    type: "free",
+    type: "seminar",
     date: "2027-02-04",
     time: "10:00",
     place: "Astrotech Jura",
-    speaker: "",
-    title: "",
-    abstract: ""
+    speaker: "Patrick Eggenberger",
+    title: "Asteroseismology of internal stellar rotation and its link to boron surface abundances in massive stars",
+    abstract: "In this presentation, we will first briefly review the recent advances made in the asteroseismic determination of the internal rotation of stars of various masses and evolutionary stages. We will then discuss the implications of these measurements for the theoretical modelling of angular momentum transport in stellar radiative zones.  Finally, we will discuss the impact of the modelling of these angular momentum transport processes on chemical mixing in the context of spectroscopic determination of surface abundances of boron in massive stars."
   },
   {
     type: "free",
