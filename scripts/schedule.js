@@ -97,7 +97,7 @@ function generate_schedule(data) {
             
         } else if( data[i].type === "reserved" ) {
 
-            const today = get_local_date();
+            const today = get_local_time();
 
             const td_speaker = document.createElement("td");
             td_speaker.setAttribute("class", "reserved-spot");
